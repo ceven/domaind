@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+## Supabase configuration
+
+For local development, copy `.env.example` to `.env` and fill in the Supabase values. `.env` is ignored by Git and must not be committed.
+
+For GitHub Actions deployments, add these repository secrets under **Settings → Secrets and variables → Actions**:
+
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY`
+
+The deployment workflow passes both secrets to Vite only while building the app.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

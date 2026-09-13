@@ -5,6 +5,31 @@
   background: #f0eee7;
 }
 
+.single-auth-shell { display: grid; place-items: center; padding: 32px; background: #163f4a; background-image: linear-gradient(rgba(201, 226, 215, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 226, 215, .07) 1px, transparent 1px), linear-gradient(145deg, #175b5b 0%, #0d3f4a 100%); background-size: 44px 44px, 44px 44px, auto; }
+.recovery-panel { width: min(100%, 480px); min-height: 0; padding: clamp(32px, 7vw, 72px); border: 1px solid rgba(18, 61, 70, .12); border-radius: 8px; box-shadow: 0 24px 70px rgba(6, 34, 42, .24); }
+
+.landing-shell {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: #163f4a;
+  background-image: linear-gradient(rgba(201, 226, 215, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 226, 215, .07) 1px, transparent 1px), linear-gradient(145deg, #175b5b 0%, #0d3f4a 100%);
+  background-size: 44px 44px, 44px 44px, auto;
+}
+
+.landing-panel {
+  width: min(100%, 620px);
+  padding: clamp(36px, 7vw, 80px);
+  border: 1px solid rgba(202, 224, 217, .28);
+  border-radius: 8px;
+  background: #f0eee7;
+  box-shadow: 0 24px 70px rgba(6, 34, 42, .24);
+}
+
+.landing-panel h1 { font-size: clamp(44px, 7vw, 76px); line-height: 1; }
+.landing-panel .secondary-button { display: block; }
+
 .welcome-panel,
 .auth-panel { padding: clamp(32px, 7vw, 96px); }
 
@@ -68,6 +93,9 @@ input:focus { border-color: #d88952; box-shadow: 0 0 0 3px rgba(216, 137, 82, .1
 .primary-button:disabled { cursor: wait; opacity: .65; }
 .secondary-button { margin-top: 28px; padding: 12px 18px; color: #175b5b; background: #d8e5de; }
 .secondary-button:hover { background: #c4d9cf; }
+.text-link { display: inline-block; margin-top: 24px; color: #175b5b; font-size: 14px; font-weight: 700; text-decoration: none; }
+.text-link:hover { color: #d27245; text-decoration: underline; text-underline-offset: 3px; }
+.forgot-link { margin-top: 20px; }
 .form-message { margin: 10px 0 0; font-size: 13px; line-height: 1.45; }
 .error-message { color: #a7463d; }
 .success-message { color: #28715d; }
